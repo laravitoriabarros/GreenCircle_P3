@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .contacts {
+    flex: 1;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .contact-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-card img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .contact-card .info {
+    flex: 1;
+  }
+
+  .status{
+	width:8px;
+	height:8px;
+	border-radius:50%;
+	display:inline-block;
+	margin-right:7px;
+}
+    .green{
+	background-color:#58b666;
+}
+    .orange{
+	background-color:#ff725d;
+    } 
+
+  .chat {
+    flex: 3;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+  }
+  
+  .chat #chat-messages {
+    overflow-y: scroll;
+    height: calc(100% - 50px);
+  }
+  
+  .message {
+    background-color: #DCF8C6;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+  }
+
+
+  .message {
+    max-width: 70%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 20px;
+  }
+  
+  .sent {
+    align-self: flex-end;
+    background-color: #DCF8C6;
+    margin-left: auto;
+    margin-right: 40px;
+  }
+  
+  .received {
+    align-self: flex-start;
+    background-color: #EAEAEA;
+  }
+  
+  
+  .message.sender {
+    background-color: #EAEAEA;
+    align-self: flex-end;
+  }
+  
+  .message-input {
+    margin-top: 20px;
+    display: flex;
+  }
+  
+  .message-input input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .message-input button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #search {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }

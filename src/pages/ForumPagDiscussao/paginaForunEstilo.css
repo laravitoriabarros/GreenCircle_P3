@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.principal{
+    margin: 0;
+    padding: 0;
+    background-color: #F5F2F2;
+}
+.pagina{
+    display: flex;
+}
+.headerDisc #homeIcon{
+    content: url('./src/assets/home.svg');
+}
+.headerDisc #wikiIcon{
+    content: url('./src/assets/agrowiki-green.svg');
+}
+.headerDisc #messageIcon{
+    content: url('./src/assets/messages.svg');
+}
+

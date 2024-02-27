@@ -1,0 +1,21 @@
+.paginaPragas{
+    display: flex;
+}
+
+.topicPraga .icone #agrowikiIcon{
+    content: url('./src/assets/agrowikipg.svg');
+}
+.topicPraga .icone #pragasIcon{
+    content: url('./src/assets/pragas-green.svg');
+}
+.topicPraga .icone #forumIcon{
+    content: url('./src/assets/forum.svg');
+}
+.topicPraga .icone #forumIcon:hover{
+    content: url('./src/assets/forum-green.svg');
+    cursor: pointer;
+}
+.topicPraga .icone #agrowikiIcon:hover {
+    content: url('./src/assets/agrowikipg-green.svg');
+    cursor: pointer;
+}

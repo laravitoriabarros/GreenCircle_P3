@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+.feed{
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 20vw 50vw 1fr;
+    gap: 40px;
+}
+.previsao{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    width: 100%;
+    /* definir tamanho da altura */
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+}
+/* .header-temp{
+    margin-bottom: 20px ;
+} */
+.header-temp p{
+    color: #5b7083;
+}
+.form-city{
+    margin: 20px 0 20px 0;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-city input{
+    width: 100%;
+    outline: none;
+    border: none;
+    margin: 10px;
+    background-color: #EAEAEA;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background-color: #EAEAEA;
+    padding: 10px;
+    border-radius: 16px;
+}
+.form-city button{
+    background-color: #35B276;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 16px;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+.container-tempo{
+    background-color: #35B276;
+    border-radius: 16px;
+    padding: 30px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.container-temperatura{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.container-temperatura img{
+    height: 100px;
+}
+.separador{
+    background-color: #fff;
+    width: 100%;
+    height: 1px;
+}
+.infos-adicionais{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 55px;
+    row-gap: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.vento{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.pressure{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.umidade{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.chuva{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* .linha-cima{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.linha-baixo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+} */
+.grupos{
+    width: 100%;
+    /* definir tamanho da altura */
+    background-color: #fff;
+    border-radius: 16px;
+}
+.timeline{
+    background-color: #ffff;
+    border-radius: 16px;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.new-tweet-form{
+    padding: 1.5rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.new-tweet-form label{
+    display: flex;
+    gap: 0.5rem;
+}
+.new-tweet-form label img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 9999px;
+}
+
+.new-tweet-form label textarea{
+    flex: 1;
+    border: 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 0.75rem;
+    resize: none;
+}
+.new-tweet-form label textarea:focus{
+    outline: none;
+}
+.new-tweet-form label textarea::placeholder{
+    color: #5b7083;
+}
+
+.new-tweet-form button[type=submit]{
+    margin-left: auto;
+    background: var(--twitter-blue);
+    border-radius: 9999px;
+    padding: 0.75rem 1.5rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 900;
+    border: 0;
+}
+.new-tweet-form button[type=submit]:hover{
+    filter: brightness(0.9);
+}
+
+/* -------- Grupos ---------- */
+.grupos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    height: max-content;
+}
+.grupos-container{
+    width: 100%;
+    /* background-color: #35B276; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.grupos-container button{
+    background-color: #fff;
+    border: solid 2px #35B276;
+    color: #35B276;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    border-radius: 12px;
+    padding: 7px;
+    margin-left: 28px;
+}
+.grupo1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.grupo2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.grupo3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.grupos img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 9999px;
+}
+
+.headerFeed #homeIcon{
+    content: url('./src/assets/home-green.svg');
+}
+.headerFeed #wikiIcon{
+    content: url('./src/assets/agrowiki.svg');
+}
+.headerFeed #messageIcon{
+    content: url('./src/assets/messages.svg');
+}
+/* .separador-cinza{
+    background-color: #DFDFDF;
+    height: 1px;
+    width: 100%;
+} */
+/* .container-ver-tudo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+} */
+/* .container-ver-tudo button{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    border: none;
+    background-color: #fff;
+    color: #35B276;
+} */
+/* @media(min-width: 1899)
+{
+    .container-tempo{
+        display: none;
+    }
+} */

@@ -1,0 +1,108 @@
+[
+    {
+      "id": 1,
+      "image": "src/assets/icones/pessoa1.png",
+      "title": "Problemas com pragas na plantação",
+      "content": "Caros agricultores, estou enfrentando sérios problemas com pragas na minha plantação. As culturas estão sendo prejudicadas e não sei como lidar com essa situação. Alguma sugestão para controlar as pragas de forma eficaz e sustentável?",
+      "comments": [
+        {
+          "id": 101,
+          "userImage": "src/assets/icones/pessoa2.jpg",
+          "userName": "Ana",
+          "content": "Já tive esse problema antes. Recomendo experimentar métodos naturais, como o uso de predadores naturais das pragas. Por exemplo, joaninhas são ótimas para controlar pulgões."
+        },
+        {
+          "id": 102,
+          "userImage": "src/assets/icones/pessoa9.jpg",
+          "userName": "Carlos",
+          "content": "Eu uso neem oil na minha plantação. É um pesticida orgânico eficaz e não prejudica o meio ambiente. Já experimentou?"
+        },
+        {
+          "id": 103,
+          "userImage": "src/assets/icones/pessoa6.png",
+          "userName": "Luiza",
+          "content": "Tente introduzir plantas repelentes, como manjericão, alecrim e lavanda, entre as culturas. Ajuda a manter as pragas afastadas de forma natural."
+        },
+        {
+          "id": 104,
+          "userImage": "src/assets/icones/pessoa5.jpeg",
+          "userName": "Ricardo",
+          "content": "A rotação de culturas também pode ser uma estratégia eficaz. Isso ajuda a quebrar o ciclo de vida das pragas, reduzindo sua incidência."
+        },
+        {
+          "id": 105,
+          "userImage": "src/assets/icones/pessoa8.png",
+          "userName": "Juliana",
+          "content": "Outra opção é usar armadilhas específicas para determinadas pragas. Elas podem ajudar a controlar a população de forma direcionada."
+        },
+        {
+          "id": 106,
+          "userImage": "src/assets/icones/pessoa1.png",
+          "userName": "Roberto",
+          "content": "Certifique-se também de manter a plantação limpa, removendo restos de culturas antigas. Isso evita que as pragas tenham locais para se abrigar e se reproduzir."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "image": "src/assets/icones/pessoa6.jpeg",
+      "title": "Dúvida sobre Agricultura Sustentável",
+      "content": "Estou interessado em adotar práticas mais sustentáveis na minha fazenda. Alguém pode compartilhar dicas sobre agricultura sustentável e como posso implementá-las em minha propriedade?",
+      "comments": [
+        {
+          "id": 201,
+          "userImage": "src/assets/icones/pessoa1.png",
+          "userName": "Isabel",
+          "content": "Comece investindo em métodos de conservação do solo, como plantio direto. Isso reduz a erosão e melhora a qualidade do solo ao longo do tempo."
+        },
+        {
+          "id": 202,
+          "userImage": "src/assets/icones/pessoa8.png",
+          "userName": "Miguel",
+          "content": "Considere também a diversificação de culturas. Plantar diferentes tipos de plantas ajuda a manter a saúde do solo e reduzir a dependência de pesticidas."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "image": "src/assets/icones/pessoa2.jpg",
+      "title": "Sementes resistentes para o clima da região",
+      "content": "Estou planejando minha próxima safra e gostaria de saber quais são as melhores opções de sementes resistentes ao clima da minha região. Alguma recomendação?",
+      "comments": [
+        {
+          "id": 301,
+          "userImage": "src/assets/icones/pessoa5.jpeg",
+          "userName": "Eduardo",
+          "content": "Procure por variedades locais adaptadas ao clima. Elas costumam ter melhor desempenho e resistência às condições específicas da região."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "image": "src/assets/icones/pessoa9.jpg",
+      "title": "Escolha de Fertilizantes para Melhorar a Produção",
+      "content": "Estou buscando orientações sobre a escolha adequada de fertilizantes para otimizar a produção na minha plantação. Quais tipos de fertilizantes vocês recomendam e como aplicá-los de forma eficaz?",
+      "comments": [
+        {
+          "id": 401,
+          "userImage": "src/assets/icones/pessoa10.jpg",
+          "userName": "Fernanda",
+          "content": "Depende das necessidades específicas das suas culturas. Fertilizantes orgânicos, como esterco compostado, são ótimos para melhorar a estrutura do solo e fornecer nutrientes de forma gradual."
+        },
+        {
+          "id": 402,
+          "userImage": "src/assets/icones/pessoa12.jpeg",
+          "userName": "Gustavo",
+          "content": "Para uma liberação rápida de nutrientes, fertilizantes químicos podem ser uma opção. No entanto, é essencial monitorar as doses para evitar a sobrecarga de nutrientes no solo."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "image": "src/assets/icones/pessoa10.jpg",
+      "title": "Combate às Brocas no Cafezal",
+      "content": "Estou lidando com uma infestação de brocas em meu cafezal, e isso está afetando severamente minha produção. Alguém tem experiência no controle dessas pragas e pode oferecer conselhos sobre como lidar com essa situação?"
+      
+    }
+  ]
+  

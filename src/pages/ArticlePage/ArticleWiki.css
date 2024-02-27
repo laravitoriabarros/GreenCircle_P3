@@ -1,0 +1,35 @@
+/*.main{
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 40px;
+}*/
+.header #homeIcon{
+    content: url('./src/assets/home.svg');
+}
+.header #wikiIcon{
+    content: url('./src/assets/agrowiki-green.svg');
+}
+.header #messageIcon{
+    content: url('./src/assets/messages.svg');
+}
+.header #circlesIcon{
+    content: url('./src/assets/circles.svg');
+}
+.topicWiki .icone #agrowikiIcon{
+    content: url('./src/assets/agrowikipg-green.svg');
+}
+.topicWiki .icone #pragasIcon{
+    content: url('./src/assets/pragas.svg');
+}
+.topicWiki .icone #forumIcon{
+    content: url('./src/assets/forum.svg');
+}
+.topicWiki .icone #forumIcon:hover{
+    content: url('./src/assets/forum-green.svg');
+    cursor: pointer;
+}
+.topicWiki .icone #pragasIcon:hover {
+    content: url('./src/assets/pragas-green.svg');
+    cursor: pointer;
+}

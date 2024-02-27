@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    background: #F5F2F2;
+}
+.nav-wiki{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+}
+.navigate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navigate img{
+    width: 37px;
+    height: 37px;
+}
+.navigate p{
+    color: var(--Cinza-cone, #737373);
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 5px ;
+}
+.navigate #forumIcon:hover {
+    content: url('src/assets/forum-green.svg');
+    cursor: pointer; 
+}
+
+.navigate #agrowikiIcon:hover{
+    content: url('src/assets/agrowikipg-green.svg');
+    cursor: pointer;
+}
+
+.navigate #pragasIcon:hover {
+    content: url('src/assets/pragas-green.svg');
+}

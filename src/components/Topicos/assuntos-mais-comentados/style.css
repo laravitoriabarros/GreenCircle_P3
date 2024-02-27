@@ -1,0 +1,105 @@
+
+
+.topicos {
+   
+    border: 2px solid #c9c9c949;
+    text-align: center;
+    border-radius: 10%;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin-bottom: 1.5em;
+  
+  }
+
+.lista-topicos {
+    padding: 20px;
+    text-align: left;
+    font-size: medium;
+    font-size: 16px;
+  }
+
+  .topicos h2{
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+  .topicos h3{
+    font-size: 18px;
+    padding-bottom: 10px;
+    color: #35B276;
+  }
+
+  .alinhar{
+    margin-top: 10px;
+    display: flex;
+    width: 75%;
+    justify-content:space-between;
+  }
+
+   .alinhar .lista-imagens {
+    position: relative;
+    display: flex;
+    text-align: left;
+  }
+
+  .topicos ul {
+    list-style: none;
+    display: block;
+    padding: 0;
+  }
+  
+  .topicos li {
+    margin-bottom: 10px;
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+  
+  }
+  
+  .avatar {
+    position: absolute;
+    border-radius: 9999px;
+    border: 2px white solid;
+    width: 20px;
+    height: 20px;
+  }
+
+  .avatar:nth-child(1) {
+    left: 25px;
+    top: -0.13px;
+  }
+
+  .avatar:nth-child(2) {
+    left: 13px;
+    top: -0.06px;
+  }
+
+  .avatar:nth-child(3) {
+    left: 0px;
+    top: 0px;
+  }
+
+  .topicos p a:hover {   
+    cursor: pointer;
+  }
+
+  .post{
+    display: block;
+    font-family: 'roboto', sans-serif;
+    font-size:x-small;
+    color: grey;
+  }
+  
+  .topicos div p {
+    padding: 10px 0px 10px 0px;
+    border-top: 1px solid #c9c9c949;
+    color: #35B276;
+    font-size: medium;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+
+  

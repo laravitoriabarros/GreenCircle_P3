@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: sticky;
+    top: 0;
+    background: #FFF;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.12), 0px 0px 4px 0px rgba(0, 0, 0, 0.14);
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+.logotype{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-left: 10px;
+}
+#logoSimbol{
+    width: 52px;
+    height: 52px;
+    border: #35B276;
+}
+#logo{
+    width: 182px;
+    height: 40px;
+    color: var(--Verde-Principal, #35B276);
+    font-family: "Anek Latin";
+    font-size: 36px;
+}
+.navegation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+    background-color: #EAEAEA;
+    border-radius: 16px;
+    padding: 5px;
+    width: 30vw;
+}
+#placeH{
+    padding-left: 10px;
+    width: 30vw;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-right: 10px;
+}
+.search input{
+    border: none;
+    background: none;
+    font-size: 16px;
+    font-family: Roboto;
+    outline: none;
+}
+.navegation #homeIcon:hover {
+    content: url('../../assets/home-green.svg');
+    cursor: pointer; 
+}
+
+.navegation #wikiIcon:hover {
+    content: url('../../assets/agrowiki-green.svg');
+    cursor: pointer;
+}
+
+.navegation #messageIcon:hover {
+    content: url('../../assets/messages-green.svg');
+    cursor: pointer;
+}
+
+.navegation #circlesIcon:hover {
+    content: url('../../assets/circles-green.svg');
+    cursor: pointer; 
+}
+

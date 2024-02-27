@@ -1,0 +1,13 @@
+.headerChat #header{
+    position: sticky;
+    margin-top: 0;
+}
+.headerChat #homeIcon{
+    content: url('./src/assets/home.svg');
+}
+.headerChat #wikiIcon{
+    content: url('./src/assets/agrowiki.svg');
+}
+.headerChat #messageIcon{
+    content: url('./src/assets/messages-green.svg');
+}
