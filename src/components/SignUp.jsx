@@ -11,6 +11,9 @@ export function SignUp() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [name, setName] = useState('');
+  const [cidade, setCidade] = useState('');
+  const [grupo, setGrupo] = useState('');
+
   const navigate = useNavigate();
 
 
@@ -30,11 +33,13 @@ export function SignUp() {
       await setDoc(userRef, {
         name: name,
         email: email,
+        cidade: cidade,
+        grupo: grupo,
         //Pode adicionar mais campos aqui
       });
       alert('Dados salvos com sucesso!');
     } catch (error) {
-      alert('Erro:', error.message);
+      console.log('Erro:', error.message);
     }
   };
   return (
@@ -77,6 +82,8 @@ export function SignUp() {
                     <select
                     name="Cidades"
                     className="text-black text-[14px] py-2 px-2 border rounded-lg dark:text-gray-400 bg-transparent dark:focus:border-gray-600 mb-5"
+                    value={cidade} // Define o valor selecionado com base no estado
+                    onChange={(e) => setCidade(e.target.value)} // Atualiza o estado ao selecionar uma nova opção
                     >
                     <option selected>Cidade</option>
                     <option value="Cidade 1">Cidade 1</option>
@@ -91,6 +98,8 @@ export function SignUp() {
                     <select
                     name="Grupos"
                     className="text-black text-[14px] py-2 px-2 border rounded-lg dark:text-gray-400 bg-transparent dark:focus:border-gray-600 mb-5"
+                    value={grupo} // Define o valor selecionado com base no estado
+                    onChange={(e) => setGrupo(e.target.value)} // Atualiza o estado ao selecionar uma nova opção
                     >
                     <option selected>Grupo</option>
                     <option value="Grupo 1">Grupo 1</option>

@@ -8,6 +8,7 @@ import { Feed } from "./pages/Feed/Feed";
 import { ArticleWiki } from "./pages/ArticlePage/ArticleWiki";
 import { LoginScreen } from "./pages/LoginPage/LoginScreen";
 import { CreateAccount } from "./pages/CreateAccountPage/CreateAccount";
+import ForgotPassword from "./components/ForgotPassword"
 
 
 export const router = createBrowserRouter([
@@ -47,6 +48,12 @@ export const router = createBrowserRouter([
                 path: '/createaccount',
                 element: <CreateAccount/>
             },
+
+            {
+                path: '/forgotPassword',
+                element: <ForgotPassword/>,
+            }
+
 
         ]
     }  

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { auth } from '../Firebase/config';
 import { sendPasswordResetEmail } from 'firebase/auth';
+import "./ForgotPassword.css";
 
 function ForgotPassword() {
   const [email, setEmail] = useState('');
@@ -17,16 +18,17 @@ function ForgotPassword() {
 
   return (
     <div>
-      <h2>Esqueceu a Senha</h2>
       <form onSubmit={handleSubmit}>
+      <h2>Esqueceu a Senha?</h2>
         <div>
-          <label htmlFor="email">Email:</label>
-          <input id="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+          <input id="email" type="email" placeholder='E-mail' value={email} onChange={(e) => setEmail(e.target.value)} required />
         </div>
-        <button type="submit">Enviar</button>
+        <button type="submit" className="btn-reset">Enviar</button>
       </form>
     </div>
   );
 }
+
+//<p> Digite seu e-mail no campo abaixo e vamos te enviar um link para redefinir sua senha!</p> 
 
 export default ForgotPassword;

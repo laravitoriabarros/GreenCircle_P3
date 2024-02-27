@@ -60,9 +60,8 @@ export function SignIn() {
               value={password} onChange={(e) => setPassword(e.target.value)} required
             />
             <div className="w-full flex justify-end mb-5">
-              <Link
+              <Link to='/forgotpassword'
                 className="text-green-400 text-[14px] underline justify-"
-                href=""
               >
                 Esqueceu a senha?
               </Link>
