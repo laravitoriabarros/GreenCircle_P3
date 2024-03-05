@@ -1,11 +1,15 @@
 import './Feed.css'
 import { useEffect } from 'react'
 import { useState } from 'react'
-import { Tweet } from '../../components/tweet/Tweet'
-import { Separator } from '../../components/separador/Separador'
+//import { Tweet } from '../../components/tweet/Tweet'
+//import { Separator } from '../../components/separador/Separador'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 import { Wind, ThermometerSimple, DropHalf, CloudRain } from '@phosphor-icons/react'
+import { db} from '../../Firebase/config'; // Ajuste o caminho conforme necessário
+import { collection, query, orderBy, onSnapshot } from "firebase/firestore"; 
+import PostForm from '../../components/tweet/PostForm'
+
 
 export function Feed(){
     // TITULO DA PAGINA
@@ -18,19 +22,21 @@ export function Feed(){
     })
     // -------------------------------
 
-    const [newTweet, setNewTweet] = useState('')
-  const [tweets, setTweets] = useState([
-    'Compartilhando minhas primeiras informações',
-    'Teste',
-    'O Compartilhamento funcionou'
-  ]) 
+    const [posts, setPosts] = useState([]);
 
-  function createNewTweet(event){
-    event.preventDefault()
-    setTweets([newTweet, ...tweets])
-    setNewTweet('')
-  }
-  
+    useEffect(() => {
+        const q = query(collection(db, "posts"), orderBy("createdAt", "desc"));
+        const unsubscribe = onSnapshot(q, (querySnapshot) => {
+            const postsArray = querySnapshot.docs.map(doc => ({
+                id: doc.id,
+                ...doc.data(),
+            }));
+            setPosts(postsArray);
+        });
+
+        return () => unsubscribe();
+    }, []);
+
   const [city, setCity] = useState("Maceió")
   const [weatherForecast, setWeatherForecast] = useState(null)
 
@@ -97,19 +103,16 @@ export function Feed(){
                 ) : null}
             </div>
           <div className="timeline">
-            <form onSubmit={createNewTweet} className="new-tweet-form">
-              <label htmlFor="tweet">
-                <img src="./src/assets/profile.png" alt="Sapé" />
-                <textarea id="tweet" placeholder='O que está acontecendo?' value = {newTweet} onChange={(event) => {
-                    setNewTweet(event.target.value)
-                  }}/>
-              </label>
-              <button type="submit">Postar</button>
-            </form>
-            <Separator/>
-              {tweets.map(tweet =>{
-                return <Tweet key={tweet} content={tweet}/>
-              })}
+            <div>
+            <PostForm />
+            {posts.map((post) => (
+                <div key={post.id}>
+                    <p>{post.text}</p>
+                    {post.imageUrl && <img src={post.imageUrl} alt="Post" style={{maxWidth: '100%'}} />}
+                </div>
+            ))}
+        </div>
+          
           </div>
           <div className="grupos">
             <div className="grupos-container">

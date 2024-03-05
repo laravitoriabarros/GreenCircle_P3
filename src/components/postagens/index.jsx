@@ -4,6 +4,8 @@ import posts from './postagens.json';
 import iconMais from '../../assets/icones/add-1 3.png';
 import fotoPerfil from '../../assets/icones/pessoa7.jpeg';
 import './style.css';
+import { storage } from '../../Firebase/config';
+import { db } from '../../Firebase/config';
 
 
 const Index = () => {

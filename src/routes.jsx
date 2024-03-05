@@ -8,7 +8,7 @@ import { Feed } from "./pages/Feed/Feed";
 import { ArticleWiki } from "./pages/ArticlePage/ArticleWiki";
 import { LoginScreen } from "./pages/LoginPage/LoginScreen";
 import { CreateAccount } from "./pages/CreateAccountPage/CreateAccount";
-import ForgotPassword from "./components/ForgotPassword"
+import ForgotPassword from "./components/ForgotPassword.jsx"
 
 
 export const router = createBrowserRouter([
