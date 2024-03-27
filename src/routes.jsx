@@ -20,7 +20,7 @@ export const router = createBrowserRouter([
                 element: <LoginScreen/>
             },
             {
-                path: '/forum',
+                path: '/discussao',
                 element: <ForumDiscussao/>
             },
             {

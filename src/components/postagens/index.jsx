@@ -1,55 +1,48 @@
-import { useState } from 'react';
+
 import { Link } from 'react-router-dom';
-import posts from './postagens.json';
-import iconMais from '../../assets/icones/add-1 3.png';
-import fotoPerfil from '../../assets/icones/pessoa7.jpeg';
 import './style.css';
+import PropTypes from 'prop-types';
+import iconMais from '../../assets/icones/add-1 3.png';
+import LikesEmoji from './like/like';
 
-
-const Index = () => {
-    const [postagens, setPostagens] = useState(posts);
-    const [novoTitulo, setNovoTitulo] = useState('');
-    const [novoConteudo, setNovoConteudo] = useState('');
-
-    const handlePublicar = () => {
-        const novaPostagem = {
-            id: postagens.length + 1,
-            title: novoTitulo,
-            content: novoConteudo,
-            image: fotoPerfil, 
-            comments: []
-        };
-
-        setPostagens([novaPostagem, ...postagens]);
-
-        // Limpar os campos de entrada
-        setNovoTitulo('');
-        setNovoConteudo('');
-    };
-
+const Index = ({ postagens, handlePublicar, novoTitulo, novoConteudo, setNovoTitulo, setNovoConteudo, setFiltro }) => {
     return (
         <div className='tela-postagem'>
-            {postagens.map(post => (
-                <div key={post.id} className="postagem">
+            <div className="filtro-container">
+                <button className="filtro-button">
+                    <img src="./src/assets/filter.svg" alt="Filtrar" />
+                </button>
+                <ul className="filtro-lista">
+                    <li onClick={() => setFiltro('recentes')}>Mais Recentes</li>
+                    <li onClick={() => setFiltro('antigos')}>Mais Antigos</li>
+                    <li onClick={() => setFiltro('populares')}>Mais Populares</li>
+                </ul>
+            </div>
+            {postagens && postagens.map((post, index) => (
+                <div key={index} className="postagem">
                     <div>
-                        <img src={post.image} alt={`Imagem da Postagem ${post.id}`} />
+                        <img src={post.image} alt={`Imagem da Postagem ${index}`} />
                         <h2>{post.title}</h2>
                     </div>
                     <p>{post.content}</p>
-
-                    {post.comments && post.comments.slice(0, 2).map((comment, index) => (
-                        <div key={comment.id} className={`comentario ${index === 0 ? 'primeiro-comentario' : 'segundo-comentario'}`}>
+                    {/* Comentários */}
+                    {post.comments && post.comments.slice(0, 2).map((comment, commentIndex) => (
+                        <div key={commentIndex} className={`comentario ${commentIndex === 0 ? 'primeiro-comentario' : 'segundo-comentario'}`}>
                             <div>
                                 <img src={comment.userImage} alt={`Imagem do Usuário ${comment.userId}`} />
-                                {/* <h3>{comment.userName}</h3> */}
                             </div>
                             <p>{comment.content}</p>
                         </div>
+
                     ))}
-                    <div className='iconMais'>
-                        <Link to="/discussao"><img src={iconMais} alt="ver conteudo" /></Link>
+                    <div className='alinhar'>
+                        <div className=' lista-emojis'>  <LikesEmoji postId={post.id} /></div>
+                        <div className='iconMais'>
+                            <Link to={`/discussao?postId=${post.id}`}><img src={iconMais} alt="ver conteudo" /></Link>
+                        </div>
                     </div>
                 </div>
+
             ))}
             <div className='novo-forum'>
                 <label >Inicie um novo tópico</label>
@@ -75,5 +68,13 @@ const Index = () => {
         </div>
     );
 };
-
+Index.propTypes = {
+    postagens: PropTypes.array.isRequired,
+    handlePublicar: PropTypes.func.isRequired,
+    novoTitulo: PropTypes.string.isRequired,
+    novoConteudo: PropTypes.string.isRequired,
+    setNovoTitulo: PropTypes.func.isRequired,
+    setNovoConteudo: PropTypes.func.isRequired,
+    setFiltro: PropTypes.func.isRequired,
+};
 export default Index;

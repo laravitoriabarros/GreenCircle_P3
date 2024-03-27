@@ -1,6 +1,6 @@
 import Header from '../../components/header/Header'
 import Topicos from '../../components/Topicos/index'
-import Forum from '../../components/postagens/index'
+import Forum from '../../components/postagens/postForum'
 import './style.css'
 
 
