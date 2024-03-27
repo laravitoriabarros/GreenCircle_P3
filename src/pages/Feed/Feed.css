@@ -1,4 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+/* Feed.css */
+
+.post-container {
+    background-color: #ffffff; /* cor de fundo branca */
+    border-radius: 10px; /* bordas arredondadas */
+    padding: 20px; /* espaço interno */
+    margin-bottom: 20px; /* espaço entre os posts */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* sombra suave */
+  }
+  
+  .post-content {
+    margin-bottom: 10px; /* espaço entre o conteúdo do post */
+  }
+  
+  .post-image {
+    width: 100%; /* imagem ocupando a largura do contêiner */
+    height: auto; /* altura automática para manter a proporção */
+    border-radius: 8px; /* bordas arredondadas */
+  }
+  
+  .like-button {
+    background-color: transparent; /* cor de fundo transparente */
+    border: none; /* sem borda */
+    cursor: pointer; /* cursor ao passar por cima */
+  }
+  
+  .like-button:hover {
+    color: #ff0000; /* cor vermelha quando hover */
+  }
+  
+
 .feed{
     margin: 40px;
     display: grid;

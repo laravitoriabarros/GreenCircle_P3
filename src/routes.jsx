@@ -17,10 +17,10 @@ export const router = createBrowserRouter([
         children: [
             {
                 path: '/',
-                element: <Feed/>
+                element: <LoginScreen/>
             },
             {
-                path: '/discussao',
+                path: '/forum',
                 element: <ForumDiscussao/>
             },
             {
@@ -36,7 +36,7 @@ export const router = createBrowserRouter([
                 element: <ChatPage/>
             },
             {
-                path: '/article',
+                path: '/wiki',
                 element: <ArticleWiki/>
             },
             {
@@ -44,8 +44,12 @@ export const router = createBrowserRouter([
                 element: <LoginScreen/>
             },
             {
-                path: '/createaccount',
+                path: '/cadastro',
                 element: <CreateAccount/>
+            },
+            {
+                path: '/feed',
+                element: <Feed/>
             },
 
         ]
